@@ -1,0 +1,55 @@
+public: archivos de caracter publico, no requieren autenticacion
+src: codigo fuente 
+-- assets: componentes utilitarios
+-- components: base de vue - esquema de trabajo estructurado para trabajar
+
+------------------
+        1 cabecera 
+------------------
+     |   2 banners
+Menu |   3 formulario
+     |   pie
+------------------
+se comunican pero son independientes
+
+-- views: todo componente se aloja dentro de una pagina o una vista
+vista es un agrupador en donde se encuantran los n componentes
+O PAGE
+
+un solo componente IGUAL: pagina y componentes
+.. app.vue   componente principal
+.. main.js   levanta la view, como archivo de configuracion archivos de arranque
+
+archivos con los que se inicializa la aplicacion
+
+-- test: con Jest, pruebas unitarias
+.. broeserslistrc: versiones del navegador
+.. .gitignore: control de archivos que no quiero subor, que git ignora, como archivos de log y directorios de visual
+.. babel.config.js es un transcriptor, transforma el lenguaje para los navegadores
+.. jest.config.js       configuracion de pruebas unitarias
+.. jsconfig.json     define las configuraciones de editor (ide)
+.. package-lock.js    las veresiones de todas las dependencias instaladas del proyecto
+.. package.json     archivo resumido
+.. README.md       archivo para documentar temas importantes para el proyecto
+.. opcional vue.config.js      cambiar puertos
+
+-----------------------------------------
+<template> //html
+  
+</template>
+
+<script>  //logica de javascript
+export default {
+
+}
+</script>
+
+<style> /* estilos CSS */
+
+</style>
+
+------------------------------------------
+option api: firma del cuerpo
+declaracion especifica
+
+compotition api: 
