@@ -1,19 +1,23 @@
 <template>
   <div>
-    <ContadorView></ContadorView>
+    <!-- <ContadorView /> -->
+    <DirectivasView/>
+
   </div>
 </template>
 
-<script>  //logica de javascript
+<script>
 import ContadorView from '../src/views/ContadorView.vue';
+import DirectivasView from './views/DirectivasView.vue';
 
 export default {
-  componenets: {
-    ContadorView
+  components: {
+    ContadorView,
+    DirectivasView,
   }
 }
 </script>
 
-<style> /* estilos CSS */
+<style>
 
 </style>
