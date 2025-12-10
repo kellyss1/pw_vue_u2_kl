@@ -23,31 +23,39 @@ un solo componente IGUAL: pagina y componentes
 archivos con los que se inicializa la aplicacion
 
 -- test: con Jest, pruebas unitarias
-.. broeserslistrc: versiones del navegador
-.. .gitignore: control de archivos que no quiero subor, que git ignora, como archivos de log y directorios de visual
-.. babel.config.js es un transcriptor, transforma el lenguaje para los navegadores
-.. jest.config.js       configuracion de pruebas unitarias
-.. jsconfig.json     define las configuraciones de editor (ide)
-.. package-lock.js    las veresiones de todas las dependencias instaladas del proyecto
-.. package.json     archivo resumido
-.. README.md       archivo para documentar temas importantes para el proyecto
-.. opcional vue.config.js      cambiar puertos
+ broeserslistrc: versiones del navegador
+ .gitignore: control de archivos que no quiero subor, que git ignora, como archivos de log y directorios de visual
+ babel.config.js es un transcriptor, transforma el lenguaje para los navegadores
+ jest.config.js       configuracion de pruebas unitarias
+ jsconfig.json     define las configuraciones de editor (ide)
+ package-lock.js    las veresiones de todas las dependencias instaladas del proyecto
+ package.json     archivo resumido
+ README.md       archivo para documentar temas importantes para el proyecto
+ opcional vue.config.js      cambiar puertos
 
 -----------------------------------------
-<template> //html
-  
+COMANDOS VUE
+vue+tab: crear elementos principales
+
+<template>
+  Aqui ponemos todo lo que es html, directivas, {{js}} y todos los elementos de VUE
 </template>
 
-<script>  //logica de javascript
-export default {
-
+<script>
+export default { //Declaracion especifica de option api
+    Aqui programamos toda la logica relacionada con jsy vue
 }
 </script>
 
-<style> /* estilos CSS */
+<style scoped> scoped: para que los estilos se apliquen solo al componente actual
+  style, estilo global
+    Todos los estilos css, no utiliamos elementos de vue
 
 </style>
 
+
+npm install 
+npm run serve
 ------------------------------------------
 option api: firma del cuerpo
 declaracion especifica
@@ -79,4 +87,11 @@ v-show: visualemente no hay diferencia con v-if, no muestra el elemento
 La diferencia principal es que v-if destruye y recrea el elemento del DOM según la condición, 
   mientras que v-show siempre mantiene el elemento en el DOM y solo alterna su visibilidad con CSS (cambiando display: none). 
 v-model: es reactiivo para asociar un valor
-v-for: para iterar
+v-for: Permite iterar sobre arreglos y construir iterativamente elementos, sobre el elemento que se repite
+
+- Modificadores de contenido 
+Al poner sin parentesis se inyecta automaticamente el envento
+
+Modificadores de eventos
+Nacen justamente despues del evento (ej. v-on:keypress.enter), ya no es necesario pasar el event como parametro
+  Documentación: https://vuejs.org/guide/essentials/event-handling.html#key-modifiers
