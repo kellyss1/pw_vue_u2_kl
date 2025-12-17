@@ -1,8 +1,8 @@
 <template>
   <div>
-    <!--<ContadorView />-->
+    <ContadorView />
     <!-- <DirectivasView /> -->
-    <PreguntaView />
+    <!-- <PreguntaView /> -->
 </div>
 </template>
 
